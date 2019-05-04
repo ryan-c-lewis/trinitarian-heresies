@@ -15,7 +15,7 @@ namespace TrinitarianHeresies.Theories
             Task.Run(() =>
             {
                 Thread.Sleep(SomePeriodOfTime);
-                Spirit = new God();
+                Spirit = new Entity();
             });
         }
     }
