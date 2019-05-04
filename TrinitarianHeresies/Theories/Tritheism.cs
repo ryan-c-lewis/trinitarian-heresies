@@ -4,9 +4,14 @@ namespace TrinitarianHeresies.Theories
     {
         public Tritheism()
         {
-            Father = new object();
-            Son = new object();
-            Spirit = new object();
+            Father = new God();
+            Son = new God();
+            Spirit = new God();
+        }
+
+        public override bool IsOne()
+        {
+            return false;
         }
     }
 }

@@ -2,11 +2,11 @@ namespace TrinitarianHeresies.Theories
 {
     public class Arianism : God
     {
-        class Creator : PersonOfGodhead
+        class Creator : God
         {
-            public readonly object Power = new object();
+            public readonly Entity Power = new Entity();
         }
-        class Creature {}
+        class Creature : Entity {}
         
         public Arianism()
         {

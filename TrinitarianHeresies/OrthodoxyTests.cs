@@ -24,37 +24,43 @@ namespace TrinitarianHeresies
         [Test]
         public void FatherIsGod()
         {
-            Assert.IsTrue(God.Equals(God.Father));
+            Assert.IsTrue(God.Father.IsFullyGod());
         }
         
         [Test]
         public void SonIsGod()
         {
-            Assert.IsTrue(God.Equals(God.Son));
+            Assert.IsTrue(God.Son.IsFullyGod());
         }
         
         [Test]
         public void SpiritIsGod()
         {
-            Assert.IsTrue(God.Equals(God.Spirit));
+            Assert.IsTrue(God.Spirit.IsFullyGod());
         }
         
         [Test]
         public void FatherIsNotSon()
         {
-            Assert.IsFalse(God.Father.Equals(God.Son));
+            Assert.AreNotSame(God.Father, God.Son);
         }
         
         [Test]
         public void FatherIsNotSpirit()
         {
-            Assert.IsFalse(God.Father.Equals(God.Spirit));
+            Assert.AreNotSame(God.Father, God.Spirit);
         }
         
         [Test]
         public void SonIsNotSpirit()
         {
-            Assert.IsFalse(God.Son.Equals(God.Spirit));
+            Assert.AreNotSame(God.Son, God.Spirit);
+        }
+
+        [Test]
+        public void IsTheLordOne()
+        {
+            Assert.IsTrue(God.IsOne());
         }
     }
 }

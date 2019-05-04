@@ -1,16 +1,10 @@
-using TrinitarianHeresies.Theories;
-
 namespace TrinitarianHeresies
 {
-    public class PersonOfGodhead
+    public class PersonOfGodhead : God
     {
-        public override bool Equals(object other)
+        public override bool IsFullyGod()
         {
-            if (other == null)
-                return false;
-            if (other == this || other is OrthodoxTheory)
-                return true;
-            return false;
+            return true;
         }
     }
 }

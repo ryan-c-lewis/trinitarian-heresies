@@ -1,16 +1,19 @@
 namespace TrinitarianHeresies
 {
-    public abstract class God
+    public class God : Entity, IShema
     {
-        public object Father { get; protected set; }
-        public object Son { get; protected set; }
-        public object Spirit { get; protected set; }
-        
-        public override bool Equals(object other)
+        public Entity Father { get; protected set; }
+        public Entity Son { get; protected set; }
+        public Entity Spirit { get; protected set; }
+
+        public override bool IsFullyGod()
         {
-            if (other == null)
-                return false;
-            return other == this || other is PersonOfGodhead;
+            return true;
+        }
+        
+        public virtual bool IsOne()
+        {
+            return true;
         }
     }
 }
