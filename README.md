@@ -172,7 +172,7 @@ public class Macedonianism : God
         Task.Run(() =>
         {
             Thread.Sleep(SomePeriodOfTime);
-            Spirit = new God();
+            Spirit = new Entity();
         });
     }
 }
