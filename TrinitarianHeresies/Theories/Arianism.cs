@@ -6,12 +6,11 @@ namespace TrinitarianHeresies.Theories
         {
             public readonly Entity Power = new Entity();
         }
-        class Creature : Entity {}
         
         public Arianism()
         {
             Father = new Creator();
-            Son = new Creature();
+            Son = new Jesus {IsHuman = true, IsDivine = false};
             Spirit = (Father as Creator).Power;
         }
     }

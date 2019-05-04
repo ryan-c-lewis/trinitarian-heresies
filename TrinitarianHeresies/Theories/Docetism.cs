@@ -1,11 +1,11 @@
 namespace TrinitarianHeresies.Theories
 {
-    public class OrthodoxTheory : God
+    public class Docetism : God
     {
-        public OrthodoxTheory()
+        public Docetism()
         {
             Father = new PersonOfGodhead();
-            Son = new Jesus {IsHuman = true, IsDivine = true};
+            Son = new Jesus {IsHuman = false, IsDivine = true};
             Spirit = new PersonOfGodhead();
         }
     }

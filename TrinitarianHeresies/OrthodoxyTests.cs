@@ -11,7 +11,8 @@ namespace TrinitarianHeresies
             new OrthodoxTheory(),
             new Modalism(),
             new Tritheism(),
-            new Arianism()
+            new Arianism(),
+            new Docetism()
         };
         
         protected virtual God God { get; }
@@ -61,6 +62,18 @@ namespace TrinitarianHeresies
         public void IsTheLordOne()
         {
             Assert.IsTrue(God.IsOne());
+        }
+        
+        [Test]
+        public void JesusIsHuman()
+        {
+            Assert.IsTrue(((Jesus) God.Son).IsHuman);
+        }
+        
+        [Test]
+        public void JesusIsDivine()
+        {
+            Assert.IsTrue(((Jesus) God.Son).IsDivine);
         }
     }
 }

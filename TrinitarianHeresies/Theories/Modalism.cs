@@ -4,7 +4,7 @@ namespace TrinitarianHeresies.Theories
     {
         public Modalism()
         {
-            Father = Son = Spirit = this;
+            Father = Son = Spirit = new Jesus {IsHuman = true, IsDivine = true};
         }
     }
 }
