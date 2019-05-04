@@ -5,7 +5,7 @@ namespace TrinitarianHeresies.Theories
         public OrthodoxTheory()
         {
             Father = new PersonOfGodhead();
-            Son = new Jesus {IsHuman = true, IsDivine = true};
+            Son = new Jesus {IsHuman = true, Divinity = DivinityStatus.Full};
             Spirit = new PersonOfGodhead();
         }
     }

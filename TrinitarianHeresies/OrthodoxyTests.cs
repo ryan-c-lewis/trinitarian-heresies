@@ -12,7 +12,11 @@ namespace TrinitarianHeresies
             new Modalism(),
             new Tritheism(),
             new Arianism(),
-            new Docetism()
+            new Docetism(),
+            new Ebionitism(),
+            new Macedonianism(),
+            new Adoptionism(),
+            new Partialism()
         };
         
         protected virtual God God { get; }
@@ -23,19 +27,25 @@ namespace TrinitarianHeresies
         }
 
         [Test]
-        public void FatherIsGod()
+        public void FatherIsFullyGod()
         {
             Assert.IsTrue(God.Father.IsFullyGod());
         }
         
         [Test]
-        public void SonIsGod()
+        public void SonIsFullyGod()
         {
             Assert.IsTrue(God.Son.IsFullyGod());
         }
         
         [Test]
-        public void SpiritIsGod()
+        public void SonIsFullyHuman()
+        {
+            Assert.IsTrue(((Jesus) God.Son).IsHuman);
+        }
+        
+        [Test]
+        public void SpiritIsFullyGod()
         {
             Assert.IsTrue(God.Spirit.IsFullyGod());
         }
@@ -62,18 +72,6 @@ namespace TrinitarianHeresies
         public void IsTheLordOne()
         {
             Assert.IsTrue(God.IsOne());
-        }
-        
-        [Test]
-        public void JesusIsHuman()
-        {
-            Assert.IsTrue(((Jesus) God.Son).IsHuman);
-        }
-        
-        [Test]
-        public void JesusIsDivine()
-        {
-            Assert.IsTrue(((Jesus) God.Son).IsDivine);
         }
     }
 }

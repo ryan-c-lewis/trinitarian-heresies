@@ -5,7 +5,7 @@ namespace TrinitarianHeresies.Theories
         public Docetism()
         {
             Father = new PersonOfGodhead();
-            Son = new Jesus {IsHuman = false, IsDivine = true};
+            Son = new Jesus {IsHuman = false, Divinity = DivinityStatus.Full};
             Spirit = new PersonOfGodhead();
         }
     }

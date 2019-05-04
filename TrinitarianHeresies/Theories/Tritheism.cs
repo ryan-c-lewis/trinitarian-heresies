@@ -5,7 +5,7 @@ namespace TrinitarianHeresies.Theories
         public Tritheism()
         {
             Father = new God();
-            Son = new Jesus {IsHuman = true, IsDivine = true};
+            Son = new Jesus {IsHuman = true, Divinity = DivinityStatus.Full};
             Spirit = new God();
         }
 

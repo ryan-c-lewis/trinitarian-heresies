@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FatherAloneAsGod.cs" />
     <Compile Include="God.cs" />
     <Compile Include="Entity.cs" />
     <Compile Include="IShema.cs" />
@@ -50,10 +51,14 @@
     <Compile Include="OrthodoxyTests.cs" />
     <Compile Include="PersonOfGodhead.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Theories\Adoptionism.cs" />
     <Compile Include="Theories\Arianism.cs" />
     <Compile Include="Theories\Docetism.cs" />
+    <Compile Include="Theories\Ebionitism.cs" />
+    <Compile Include="Theories\Macedonianism.cs" />
     <Compile Include="Theories\Modalism.cs" />
     <Compile Include="Theories\OrthodoxTheory.cs" />
+    <Compile Include="Theories\Partialism.cs" />
     <Compile Include="Theories\Tritheism.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,11 +1,11 @@
 namespace TrinitarianHeresies.Theories
 {
-    public class Arianism : God
+    public class Ebionitism : God
     {
-        public Arianism()
+        public Ebionitism()
         {
             Father = new FatherAloneAsGod();
-            Son = new Jesus {IsHuman = true, Divinity = DivinityStatus.Partial};
+            Son = new Jesus {IsHuman = true, Divinity = DivinityStatus.None};
             Spirit = (Father as FatherAloneAsGod).Power;
         }
     }
