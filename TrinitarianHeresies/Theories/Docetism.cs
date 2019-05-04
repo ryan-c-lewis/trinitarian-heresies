@@ -1,3 +1,5 @@
+using TrinitarianHeresies.Model;
+
 namespace TrinitarianHeresies.Theories
 {
     public class Docetism : God

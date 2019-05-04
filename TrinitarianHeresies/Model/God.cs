@@ -1,8 +1,8 @@
 using System;
 
-namespace TrinitarianHeresies
+namespace TrinitarianHeresies.Model
 {
-    public class God : Entity, IShema
+    public class God : Entity
     {
         public TimeSpan SomePeriodOfTime = TimeSpan.FromDays(999);
         

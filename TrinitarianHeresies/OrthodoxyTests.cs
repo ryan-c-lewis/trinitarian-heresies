@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using TrinitarianHeresies.Model;
 using TrinitarianHeresies.Theories;
 
 namespace TrinitarianHeresies

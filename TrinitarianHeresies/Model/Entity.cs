@@ -1,4 +1,4 @@
-namespace TrinitarianHeresies
+namespace TrinitarianHeresies.Model
 {
     public class Entity
     {

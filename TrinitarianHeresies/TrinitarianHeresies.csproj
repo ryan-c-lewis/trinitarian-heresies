@@ -43,13 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FatherAloneAsGod.cs" />
-    <Compile Include="God.cs" />
-    <Compile Include="Entity.cs" />
-    <Compile Include="IShema.cs" />
-    <Compile Include="Jesus.cs" />
+    <Compile Include="Model\Entity.cs" />
+    <Compile Include="Model\FatherAloneAsGod.cs" />
+    <Compile Include="Model\God.cs" />
+    <Compile Include="Model\Jesus.cs" />
+    <Compile Include="Model\PersonOfGodhead.cs" />
     <Compile Include="OrthodoxyTests.cs" />
-    <Compile Include="PersonOfGodhead.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Theories\Adoptionism.cs" />
     <Compile Include="Theories\Arianism.cs" />
