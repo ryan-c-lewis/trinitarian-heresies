@@ -44,7 +44,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="God.cs" />
-    <Compile Include="IGod.cs" />
     <Compile Include="OrthodoxyTests.cs" />
     <Compile Include="PersonOfGodhead.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

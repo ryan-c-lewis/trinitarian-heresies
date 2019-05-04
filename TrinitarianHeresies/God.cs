@@ -1,6 +1,6 @@
 namespace TrinitarianHeresies
 {
-    public abstract class God<T> where T : God<T>, IGod, new()
+    public abstract class God
     {
         public object Father { get; protected set; }
         public object Son { get; protected set; }

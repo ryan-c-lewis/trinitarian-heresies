@@ -1,6 +1,6 @@
 namespace TrinitarianHeresies.Theories
 {
-    public class Modalism : God<Modalism>, IGod
+    public class Modalism : God
     {
         public Modalism()
         {

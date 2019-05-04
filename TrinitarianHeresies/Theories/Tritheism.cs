@@ -1,6 +1,6 @@
 namespace TrinitarianHeresies.Theories
 {
-    public class Tritheism : God<Tritheism>, IGod
+    public class Tritheism : God
     {
         public Tritheism()
         {

@@ -13,13 +13,13 @@ namespace TrinitarianHeresies
             new Tritheism(),
             new Arianism()
         };
+        
+        protected virtual God God { get; }
 
-        public OrthodoxyTests(IGod god)
+        public OrthodoxyTests(God god)
         {
             God = god;
         }
-        
-        protected virtual IGod God { get; }
 
         [Test]
         public void FatherIsGod()

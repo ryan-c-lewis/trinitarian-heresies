@@ -1,6 +1,6 @@
 namespace TrinitarianHeresies.Theories
 {
-    public class Arianism : God<Arianism>, IGod
+    public class Arianism : God
     {
         class Creator : PersonOfGodhead
         {
